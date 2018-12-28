@@ -57,7 +57,8 @@ module.exports = {
       if(err || grocery == null){
         res.redirect(404, `/groceries/${req.params.id}/edit`);
       } else {
-        res.redirect(`groceries/${topic.id}`);
+        res.redirect(`groceries/${grocery.id}`);
+        //res.render("groceries/index", {groceries});
       }
     });
   }
