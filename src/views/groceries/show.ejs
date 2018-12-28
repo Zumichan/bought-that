@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <% include ../static/partials/navbar.ejs %>
+
+    <main class="container">
+      <h1><%= grocery.item %></h1>
+      <a href="/groceries/<%= grocery.id %>/edit" class="btn btn-warning">Edit</a>
+      <form style="display:initial" action="/groceries/<%= grocery.id %>/destroy" method="post">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+      <a href="/groceries" class="btn btn-info">Back to Grocery Shopping List</a>
+    </main>
+
+    <% include ../static/partials/baseScripts.ejs %>
+
+  </body>
+</html>
