@@ -42,8 +42,8 @@ module.exports = {
        callback(err);
      })
    },
-   updateGrocery(id, updatedGrocery, callback){
-    return Grocery.findByPk(id)
+   updateGrocery(req, updatedGrocery, callback){
+    return Grocery.findById(req.params.id)
     .then((grocery) => {
       if(!grocery){
         return callback("Item not found");

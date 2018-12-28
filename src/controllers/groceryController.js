@@ -10,9 +10,9 @@ module.exports = {
         }
       })
   },
-  new(req, res, next){
+  /*new(req, res, next){
      res.render("groceries/new");
-  },
+  },*/
   create(req, res, next){
      let newGrocery = {
        item: req.body.item,
@@ -53,11 +53,11 @@ module.exports = {
      });
    },
    update(req, res, next){
-    groceryQueries.updateGrocery(req.params.id, req.body, (err, grocery) => {
+    groceryQueries.updateGrocery(req, req.body, (err, grocery) => {
       if(err || grocery == null){
         res.redirect(404, `/groceries/${req.params.id}/edit`);
       } else {
-        res.redirect(`/groceries/${grocery.id}`);
+        res.redirect(`/groceries/${req.params.id}`);
       }
     });
   }

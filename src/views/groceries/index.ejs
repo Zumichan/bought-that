@@ -9,9 +9,13 @@
 
       <h1>Grocery Shopping List</h1>
 
-      <a href="/groceries/new" class="btn btn-success">New Item</a>
+      <form action="/groceries/create" method="post">
+        <div class="form-group">
+          <input type="text" class="form-control" name="item" aria-describedby="itemHelp" placeholder="Enter Item">
+        </div>
+        <button type="submit" class="btn btn-success">Submit New Item</button>
+      </form>
 
-      <br>
       <br>
 
       <ul class="list-group">
