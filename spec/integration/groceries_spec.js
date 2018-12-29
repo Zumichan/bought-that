@@ -39,17 +39,6 @@ describe("routes : groceries", () => {
      });
    });
 
-   describe("GET /groceries/new", () => {
-
-    it("should render a new grocery form", (done) => {
-      request.get(`${base}new`, (err, res, body) => {
-        expect(err).toBeNull();
-        expect(body).toContain("New Item");
-        done();
-      });
-    });
-  });
-
   describe("POST /groceries/create", () => {
      const options = {
        url: `${base}create`,
