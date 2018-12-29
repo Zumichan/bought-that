@@ -16,8 +16,11 @@
           <input value="<%= grocery.item %>" type="text" class="form-control" name="item" aria-describedby="itemHelp" placeholder="Enter Item">
         </div>
         <div class="form-group">
-          <label for ="title">Status:</label>
-          <input type="checkbox" name="purchased" value="Purchased" onclick="printChecked(this)"> Purchased
+          <label for ="purchased">Purchased:</label>
+          <select class="form-control" name="purchased">
+            <option value="false">To be purchased</option>
+            <option value="true">Purchased</option>
+          </select>
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
       </form>

@@ -9,10 +9,12 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       item: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       purchased: {
-        type: Sequelize.STRING
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
       },
       createdAt: {
         allowNull: false,
