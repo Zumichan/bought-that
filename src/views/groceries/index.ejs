@@ -22,10 +22,19 @@
         <% groceries.forEach((grocery) => { %>
           <li class="list-group-item">
             <a href="/groceries/<%= grocery.id %>"> <%= grocery.item %> </a>
+            <% if(grocery.purchased) { %>
+              <span class="flaticon-checkmark"></span>
+            <% } %>
           </li>
         <% }) %>
       </ul>
 
     </main>
+    <% include ../static/partials/baseScripts.ejs %>
+    <script>
+      function printChecked(cb){
+        return cb.checked;
+      }
+    </script>
   </body>
 </html>

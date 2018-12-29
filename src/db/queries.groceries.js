@@ -14,6 +14,7 @@ module.exports = {
   addGrocery(newGrocery, callback){
     return Grocery.create({
       item: newGrocery.item,
+      purchased: newGrocery.purchased
     })
     .then((grocery) => {
       callback(null, grocery);

@@ -1,3 +1,10 @@
 body {
   padding-top: 54px;
 }
+
+.jumbotron {
+  margin-top: 20px;
+  background-image: url("apples-business-buy-95425.jpg");
+  background-size: cover;
+  color: white;
+}

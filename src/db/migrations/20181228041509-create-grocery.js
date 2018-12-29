@@ -11,6 +11,9 @@ module.exports = {
       item: {
         type: Sequelize.STRING
       },
+      purchased: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

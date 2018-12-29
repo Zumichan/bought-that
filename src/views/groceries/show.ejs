@@ -8,6 +8,12 @@
 
     <main class="container">
       <h1><%= grocery.item %></h1>
+      <p>Status:
+        <% if(grocery.purchased) { %>
+          <span class="flaticon-checkmark"></span>
+          <%= grocery.purchased %>
+        <% } %>
+      </p>
       <a href="/groceries/<%= grocery.id %>/edit" class="btn btn-warning">Edit</a>
       <form style="display:initial" action="/groceries/<%= grocery.id %>/destroy" method="post">
         <button type="submit" class="btn btn-danger">Delete</button>
