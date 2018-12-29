@@ -1,4 +1,5 @@
 const Grocery = require("./models").Grocery;
+const Status = require("./models").Status;
 
 module.exports = {
 
@@ -23,7 +24,11 @@ module.exports = {
     })
   },
   getGrocery(id, callback){
-     return Grocery.findByPk(id)
+     return Grocery.findByPk(id, {
+         include: [
+          {model: Status, as: "statuses"}
+         ]
+       })
      .then((grocery) => {
        callback(null, grocery);
      })

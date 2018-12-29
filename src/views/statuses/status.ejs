@@ -1,0 +1,11 @@
+<% const status = grocery.getStatusFor(currentUser.id) %>
+<% if (status) { %>
+  <form style="display: initial;" action="/groceries/<%= grocery.Id %>/statuses/<%= status.id %>/destroy" method="post">
+    <button type="submit" class="btn btn-danger">To be purchased</button>
+  </form>
+<% } else { %>
+ <!-- #2 -->
+  <form style="display: initial;" action="/groceries/<%= grocery.Id %>/statuses/<%= status.id %>/create" method="post">
+    <button type="submit" class="btn btn-primary">Purchased</button>
+  </form>
+<% } %>

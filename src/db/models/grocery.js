@@ -4,7 +4,13 @@ module.exports = (sequelize, DataTypes) => {
     item: DataTypes.STRING
   }, {});
   Grocery.associate = function(models) {
-    // associations can be defined here
+    Grocery.hasMany(models.Status, {
+     foreignKey: "groceryId",
+     as: "statuses"
+   });
   };
+  Grocery.prototype.getStatusFor = function(userId){
+     return this.statuses.find((status) => { return status.userId == userId });
+   };
   return Grocery;
 };
