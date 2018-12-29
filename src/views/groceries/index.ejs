@@ -21,7 +21,7 @@
       <ul class="list-group">
         <% groceries.forEach((grocery) => { %>
           <li class="list-group-item">
-            <a href="/groceries/<%= grocery.id %>"> <%= grocery.item %> </a> 
+            <a href="/groceries/<%= grocery.id %>"> <%= grocery.item %> </a>
             <% if(grocery.purchased) { %>
               <span class="flaticon-checkmark"></span>
             <% } %>
