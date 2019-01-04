@@ -8,16 +8,20 @@ Live Deployment: https://zumichan-bought-that.herokuapp.com
 
 ## Resources:
 
-* Node.js
-* Express.js
-* Request
-* PostgreSQL
-* Sequelize
-* EJS
-* Passport.js
-* Bcrypt.js
-* Jasmine
-* Heroku
+* HTML5 for making webpage template
+* EJS-Embedded JavaScript for generating HTML using simple syntax with fast rendering times
+* Bootstrap-for styling
+* Node.js-for server side development
+* PostgreSQL-for storing data
+* Sequelize-promise-based ORM. Translation service, allows us to do tasks such as defining models, setting up associations between models, generate migrations
+* Express.js-node.js framework that provides an API that allows us to perform common tasks which node is missing
+* Request-module that helps us make HTTP requests needed to test the endpoints in our app
+* Passport.js-for implementing authentication system
+* Bcrypt.js-for storing hashed version of a password
+* Dotenv- Node package that assists us with handling environment variables for our development environment.
+* Jasmine-for testing
+* Heroku-for live deployment
+
 
 ## Instructions:
 
