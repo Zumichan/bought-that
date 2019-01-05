@@ -2,7 +2,7 @@
 An application which allows users to share real-time grocery shopping list. This app is built with node.js, PostgreSQL, HTML5, and styled with Bootstrap.
 
 Once the user sign up and sign in, "Shopping List" appears on the navbar.
-<img width="814" alt="bought that 1" src="https://user-images.githubusercontent.com/31319914/50723185-3bbb2900-108f-11e9-955f-8e1fc3212ea9.png">
+<img width="717" alt="bought that 6" src="https://user-images.githubusercontent.com/31319914/50723366-6e662100-1091-11e9-8d55-727e7fa1be4a.png">
 
 User can add new items to the shopping list. "Purchased" items will have checkbox icon next to them.
 <img width="719" alt="bought that 4" src="https://user-images.githubusercontent.com/31319914/50723303-af116a80-1090-11e9-9a19-9895b902aa9a.png">
