@@ -5,10 +5,10 @@ Once the user sign up and sign in, "Shopping List" appears on the navbar.
 <img width="814" alt="bought that 1" src="https://user-images.githubusercontent.com/31319914/50723185-3bbb2900-108f-11e9-955f-8e1fc3212ea9.png">
 
 User can add new items to the shopping list. "Purchased" items will have checkbox icon next to them.
-<img width="959" alt="bought that 2" src="https://user-images.githubusercontent.com/31319914/50723186-3fe74680-108f-11e9-8650-cd9e30546b19.png">
+<img width="719" alt="bought that 4" src="https://user-images.githubusercontent.com/31319914/50723303-af116a80-1090-11e9-9a19-9895b902aa9a.png">
 
 User can update the purchased status by clicking the edit button.
-<img width="986" alt="bought that 3" src="https://user-images.githubusercontent.com/31319914/50723187-41b10a00-108f-11e9-9d52-b551dca3358b.png">
+<img width="713" alt="bought that 5" src="https://user-images.githubusercontent.com/31319914/50723304-b0db2e00-1090-11e9-911d-7359b70723f2.png">
 
 Live Deployment: https://zumichan-bought-that.herokuapp.com
 
